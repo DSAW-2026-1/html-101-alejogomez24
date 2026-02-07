@@ -1,0 +1,105 @@
+:root{
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  background-color: var(--eggshell);
+  color: var(--wenge-brown);
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-family: 'Young Serif', serif;
+  color: var(--dark-charcoal);
+}
+
+ul, ol {
+  padding-left: 24px;
+}
+
+li {
+  line-height: 1.6;
+}
+
+ul li::marker {
+  color: var(--nutmeg);
+}
+
+ol li::marker {
+  color: var(--nutmeg);
+  font-weight: 700;
+}
+
+#recipe {
+  max-width: 720px;
+  margin: auto;
+  background-color: var(--white);
+  padding: 32px;
+  border-radius: 20px;
+}
+
+.prep-time {
+  background-color: var(--rose-white);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.prep-time h2 {
+  font-family: 'Outfit', sans-serif;
+  color: var(--dark-raspberry);
+  font-size: 18px;
+}
+
+.prep-time li {
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+h2:not(.prep-time h2) {
+  color: var(--nutmeg);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+th, td {
+  padding: 12px 8px;
+}
+
+tr {
+  border-bottom: 1px solid var(--light-grey);
+}
+
+th {
+  color: var(--wenge-brown);
+  font-weight: 400;
+}
+
+td {
+  color: var(--nutmeg);
+  font-weight: 700;
+}
+
+.recipe-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
